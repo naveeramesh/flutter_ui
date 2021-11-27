@@ -7,7 +7,7 @@ void main() => runApp(MaterialApp(
     ));
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({Key key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();

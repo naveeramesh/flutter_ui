@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/bg.dart';
 import 'package:flutter_ui/login.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -7,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,6 +17,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const HomePage());
+        home: const BackgroundImg());
   }
 }
