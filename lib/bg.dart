@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,8 +16,11 @@ class _SwipeCardState extends State<SwipeCard> {
   List images = [
     "https://images.pexels.com/photos/2669601/pexels-photo-2669601.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     "https://images.pexels.com/photos/3404474/pexels-photo-3404474.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    "https://images.pexels.com/photos/1719233/pexels-photo-1719233.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    "https://images.pexels.com/photos/1719233/pexels-photo-1719233.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "https://images.pexels.com/photos/4355377/pexels-photo-4355377.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "https://images.pexels.com/photos/1680208/pexels-photo-1680208.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
   ];
+  List names = ['Manasa', "John", "Noha", 'Tokyo', "Andria"];
   Widget build(BuildContext context) {
     return Scaffold(
       body: TinderSwapCard(
@@ -52,6 +54,33 @@ class _SwipeCardState extends State<SwipeCard> {
                       image: DecorationImage(
                           image: NetworkImage('${images[index]}'),
                           fit: BoxFit.cover),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(left: 20.0, bottom: 20),
+                              child: Text(
+                                "${names[index]}",
+                                style: GoogleFonts.ubuntu(
+                                    color: Colors.white, fontSize: 20),
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(bottom: 20, left: 10),
+                              child: Icon(
+                                Icons.verified,
+                                color: Colors.blue,
+                              ),
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   ),
                 ),
