@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class BackgroundImg extends StatefulWidget {
-  const BackgroundImg({Key key}) : super(key: key);
+class SwipeCard extends StatefulWidget {
+  const SwipeCard({Key key}) : super(key: key);
 
   @override
-  _BackgroundImgState createState() => _BackgroundImgState();
+  _SwipeCardState createState() => _SwipeCardState();
 }
 
-class _BackgroundImgState extends State<BackgroundImg> {
+class _SwipeCardState extends State<SwipeCard> {
   CardController controller;
   int counter;
   @override
