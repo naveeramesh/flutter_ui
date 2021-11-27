@@ -127,6 +127,9 @@ class _HomePageState extends State<HomePage> {
                       color: _isPasswordEightCharacters
                           ? Colors.red
                           : Colors.transparent,
+                      border: _isPasswordEightCharacters
+                          ? Border.all(color: Colors.transparent)
+                          : Border.all(color: Colors.transparent),
                       borderRadius: BorderRadius.circular(50)),
                   child: Center(
                     child: Icon(
@@ -139,10 +142,11 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   width: 10,
                 ),
-                Text(
-                  "Password have 8 characters",
-                  style: GoogleFonts.ubuntu(),
-                )
+                Text("Password have 8 characters",
+                    style: GoogleFonts.ubuntu(
+                        color: _isPasswordEightCharacters
+                            ? Colors.black
+                            : Colors.transparent))
               ],
             ),
             SizedBox(
@@ -158,6 +162,9 @@ class _HomePageState extends State<HomePage> {
                       color: _hasPasswordOneNumber
                           ? Colors.red
                           : Colors.transparent,
+                      border: _hasPasswordOneNumber
+                          ? Border.all(color: Colors.transparent)
+                          : Border.all(color: Colors.transparent),
                       borderRadius: BorderRadius.circular(50)),
                   child: Center(
                     child: Icon(
@@ -172,7 +179,10 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Text(
                   "Password atleast have 1 number",
-                  style: GoogleFonts.ubuntu(),
+                  style: GoogleFonts.ubuntu(
+                      color: _hasPasswordOneNumber
+                          ? Colors.black
+                          : Colors.transparent),
                 )
               ],
             ),
@@ -189,6 +199,9 @@ class _HomePageState extends State<HomePage> {
                       color: _hasPasswordOneSplCh
                           ? Colors.red
                           : Colors.transparent,
+                      border: _hasPasswordOneSplCh
+                          ? Border.all(color: Colors.transparent)
+                          : Border.all(color: Colors.transparent),
                       borderRadius: BorderRadius.circular(50)),
                   child: Center(
                     child: Icon(
@@ -203,13 +216,17 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Text(
                   "Password atleast have 1 special character",
-                  style: GoogleFonts.ubuntu(),
+                  style: GoogleFonts.ubuntu(
+                      color: _hasPasswordOneSplCh
+                          ? Colors.black
+                          : Colors.transparent),
                 )
               ],
             ),
             Spacer(),
-            Container(
+            MaterialButton(
               height: 60,
+              onPressed: () {},
               color: Colors.green,
               child: Center(
                 child: Text(
@@ -220,7 +237,9 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.bold),
                 ),
               ),
-            ),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+            )
           ],
         ),
       ),
