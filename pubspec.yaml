@@ -9,6 +9,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_advanced_drawer: ^1.3.0
   flutter_tindercard: ^0.2.0
   google_fonts: ^2.1.0
 

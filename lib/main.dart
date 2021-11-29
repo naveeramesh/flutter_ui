@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/bg.dart';
+import 'package:flutter_ui/hiddendrawer.dart';
+import 'package:flutter_ui/swipecard.dart';
 import 'package:flutter_ui/login.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const SwipeCard());
+        home: const HiddenDrawer());
   }
 }
