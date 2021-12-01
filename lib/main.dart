@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/assistant.dart';
 import 'package:flutter_ui/hiddendrawer.dart';
 import 'package:flutter_ui/swipecard.dart';
 import 'package:flutter_ui/login.dart';
@@ -18,6 +19,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const HiddenDrawer());
+        home: const Assistant());
   }
 }
