@@ -31,5 +31,11 @@ https://user-images.githubusercontent.com/54928117/143732145-131e036e-a6a3-4d0f-
 
 https://user-images.githubusercontent.com/54928117/143816728-191bd97c-c4bd-452d-bf7f-43c0ee18e8a6.mp4
 
+4. Avatar glow with Assistant
+  
+
+
+https://user-images.githubusercontent.com/54928117/144180898-74f8b6bb-96a3-48f8-bd3c-2f3a42a4f216.mp4
+
 
 
