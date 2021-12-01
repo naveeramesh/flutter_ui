@@ -3,6 +3,7 @@ import 'package:flutter_ui/assistant.dart';
 import 'package:flutter_ui/hiddendrawer.dart';
 import 'package:flutter_ui/swipecard.dart';
 import 'package:flutter_ui/login.dart';
+import 'package:flutter_ui/tiktok/tiktokui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -19,6 +20,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const Assistant());
+        home: const TikTokUi());
   }
 }
