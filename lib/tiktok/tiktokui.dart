@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/tiktok/data.dart';
 import 'package:flutter_ui/tiktok/videodetail.dart';
+import 'package:flutter_ui/tiktok/videoplayer.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'descriptionbar.dart';
 import 'sidebar.dart';
@@ -71,8 +72,8 @@ class _TikTokUiState extends State<TikTokUi> {
             return Stack(
               alignment: Alignment.bottomCenter,
               children: [
-                Container(
-                  color: Colors.purple,
+                VideoPlayerScreen(
+                  video: videos_detail[index],
                 ),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.end,

@@ -1,13 +1,9 @@
 import 'package:flutter_ui/tiktok/user.dart';
 import 'package:flutter_ui/tiktok/videodetail.dart';
 
-User currentUSer = User('noha_sumi',
-    "https://images.pexels.com/photos/3533228/pexels-photo-3533228.png?auto=compress&cs=tinysrgb&dpr=2&w=500");
-User User1 = User('shipha_casee',
-    "https://images.pexels.com/photos/4519118/pexels-photo-4519118.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+User User1 = User('shipha_casee', "https://wallpaperaccess.com/full/2213424.jpg");
 
-User User2 = User("helen_mac",
-    "https://images.pexels.com/photos/1845208/pexels-photo-1845208.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+User User2 = User("helen_mac", "https://www.whatsappprofiledpimages.com/wp-content/uploads/2021/08/Profile-Photo-Wallpaper.jpg");
 
 final List<Video> videos_detail = [
   Video(
