@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/tiktok/videodetail.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SideBar extends StatefulWidget {
-  const SideBar({Key key}) : super(key: key);
-
+  const SideBar({Key key, this.video}) : super(key: key);
+  final Video video;
   @override
   State<SideBar> createState() => _SideBarState();
 }
@@ -39,7 +40,7 @@ class _SideBarState extends State<SideBar> {
               height: 5,
             ),
             Text(
-              "1.2M",
+              "${widget.video.likes}",
               style: GoogleFonts.ubuntu(color: Colors.white),
             ),
           ],
@@ -56,7 +57,7 @@ class _SideBarState extends State<SideBar> {
               height: 5,
             ),
             Text(
-              "200k",
+              "${widget.video.comments}",
               style: GoogleFonts.ubuntu(color: Colors.white),
             ),
           ],

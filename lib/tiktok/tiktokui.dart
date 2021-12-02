@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/tiktok/data.dart';
+import 'package:flutter_ui/tiktok/videodetail.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'descriptionbar.dart';
 import 'sidebar.dart';
 
 class TikTokUi extends StatefulWidget {
-  const TikTokUi({Key key}) : super(key: key);
+  final Video video;
+  const TikTokUi({Key key, this.video}) : super(key: key);
 
   @override
   _TikTokUiState createState() => _TikTokUiState();
@@ -63,7 +66,7 @@ class _TikTokUiState extends State<TikTokUi> {
       body: PageView.builder(
           onPageChanged: (int page) => print("${page}"),
           scrollDirection: Axis.vertical,
-          itemCount: 5,
+          itemCount: videos_detail.length,
           itemBuilder: (context, index) {
             return Stack(
               alignment: Alignment.bottomCenter,
@@ -78,13 +81,16 @@ class _TikTokUiState extends State<TikTokUi> {
                         flex: 3,
                         child: Container(
                           height: MediaQuery.of(context).size.height / 4,
-                          color: Colors.yellow,
-                          child: DescriptionBar(),
+                          child: DescriptionBar(
+                            video: videos_detail[index],
+                          ),
                         )),
                     Expanded(
                         child: Container(
                       height: MediaQuery.of(context).size.height / 1.75,
-                      child: SideBar(),
+                      child: SideBar(
+                        video: videos_detail[index],
+                      ),
                     ))
                   ],
                 )
