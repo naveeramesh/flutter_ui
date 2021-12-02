@@ -46,10 +46,11 @@ class _SideBarState extends State<SideBar> {
         ),
         Column(
           children: [
-            Icon(
-              Icons.message,
-              size: 30,
-              color: Colors.white,
+            Container(
+              child: Image.asset(
+                'assets/images/chat.png',
+                height: 30,
+              ),
             ),
             SizedBox(
               height: 5,
@@ -62,10 +63,11 @@ class _SideBarState extends State<SideBar> {
         ),
         Column(
           children: [
-            Icon(
-              Icons.share,
-              size: 30,
-              color: Colors.white,
+            Container(
+              child: Image.asset(
+                'assets/images/share.png',
+                height: 30,
+              ),
             ),
           ],
         ),
@@ -77,7 +79,7 @@ class _SideBarState extends State<SideBar> {
               color: Colors.white,
               image: DecorationImage(
                   image: NetworkImage(
-                      "https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"),
+                      "https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"),
                   fit: BoxFit.cover)),
         )
       ],

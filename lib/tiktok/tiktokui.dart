@@ -84,7 +84,6 @@ class _TikTokUiState extends State<TikTokUi> {
                     Expanded(
                         child: Container(
                       height: MediaQuery.of(context).size.height / 1.75,
-                      color: Colors.pink,
                       child: SideBar(),
                     ))
                   ],

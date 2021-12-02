@@ -12,7 +12,7 @@ class _DescriptionBarState extends State<DescriptionBar> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        
+        Text('')
       ],
     );
   }
