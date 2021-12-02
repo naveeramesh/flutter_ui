@@ -20,7 +20,7 @@ class _DescriptionBarState extends State<DescriptionBar> {
       children: [
         Padding(
           padding: const EdgeInsets.only(left: 8.0),
-          child: Text("@${widget.video.postedBy.username}",
+          child: Text("@${widget.video.username}",
               style: GoogleFonts.ubuntu(
                 fontSize: 18,
                 color: Colors.white,

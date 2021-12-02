@@ -1,7 +1,7 @@
-import 'package:flutter_ui/tiktok/user.dart';
 
 class Video {
-  final User postedBy;
+  final String username;
+  final String imageurl;
   final String videourl;
   final String likes;
   final String comments;
@@ -9,6 +9,6 @@ class Video {
   final String audioname;
   final String songimage;
 
-  Video(this.postedBy, this.videourl, this.likes, this.comments, this.caption,
-      this.audioname,this.songimage);
+  Video(this.username,this.imageurl, this.videourl, this.likes, this.comments, this.caption,
+      this.audioname, this.songimage);
 }

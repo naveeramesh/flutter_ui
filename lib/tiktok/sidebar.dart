@@ -19,7 +19,7 @@ class _SideBarState extends State<SideBar> {
         CircleAvatar(
           radius: 20,
           backgroundColor: Colors.white,
-          backgroundImage: NetworkImage(widget.video.postedBy.imageurl),
+          backgroundImage: NetworkImage(widget.video.imageurl),
         ),
         Column(
           children: [
