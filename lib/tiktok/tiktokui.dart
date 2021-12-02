@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'descriptionbar.dart';
 import 'sidebar.dart';
+
 class TikTokUi extends StatefulWidget {
   const TikTokUi({Key key}) : super(key: key);
 
@@ -77,6 +79,7 @@ class _TikTokUiState extends State<TikTokUi> {
                         child: Container(
                           height: MediaQuery.of(context).size.height / 4,
                           color: Colors.yellow,
+                          child: DescriptionBar(),
                         )),
                     Expanded(
                         child: Container(
@@ -92,5 +95,3 @@ class _TikTokUiState extends State<TikTokUi> {
     );
   }
 }
-
-

@@ -71,7 +71,7 @@ class _SideBarState extends State<SideBar> {
         ),
         Container(
           height: 40,
-          width: 50,
+          width: 40,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
               color: Colors.white,
