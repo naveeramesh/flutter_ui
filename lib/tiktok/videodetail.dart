@@ -7,7 +7,8 @@ class Video {
   final String comments;
   final String caption;
   final String audioname;
+  final String songimage;
 
   Video(this.postedBy, this.videourl, this.likes, this.comments, this.caption,
-      this.audioname);
+      this.audioname,this.songimage);
 }

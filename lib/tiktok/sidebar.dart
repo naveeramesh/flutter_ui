@@ -19,8 +19,7 @@ class _SideBarState extends State<SideBar> {
         CircleAvatar(
           radius: 20,
           backgroundColor: Colors.white,
-          backgroundImage: NetworkImage(
-              "https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"),
+          backgroundImage: NetworkImage(widget.video.postedBy.imageurl),
         ),
         Column(
           children: [
@@ -79,8 +78,7 @@ class _SideBarState extends State<SideBar> {
               borderRadius: BorderRadius.circular(5),
               color: Colors.white,
               image: DecorationImage(
-                  image: NetworkImage(
-                      "https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"),
+                  image: NetworkImage(widget.video.songimage),
                   fit: BoxFit.cover)),
         )
       ],
