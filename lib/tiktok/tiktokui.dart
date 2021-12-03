@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/tiktok/data.dart';
-import 'package:flutter_ui/tiktok/videodetail.dart';
 import 'package:flutter_ui/tiktok/videoplayer.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'descriptionbar.dart';
 import 'sidebar.dart';
 
 class TikTokUi extends StatefulWidget {
-  final Video video;
-  const TikTokUi({Key key, this.video}) : super(key: key);
+  const TikTokUi({
+    Key key,
+  }) : super(key: key);
 
   @override
   _TikTokUiState createState() => _TikTokUiState();

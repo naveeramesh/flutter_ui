@@ -137,7 +137,7 @@ class _UsersChatState extends State<UsersChat> {
                 children: [
                   Text(
                     "Messages",
-                    style: GoogleFonts.ubuntu( 
+                    style: GoogleFonts.ubuntu(
                         color: Colors.purple,
                         fontWeight: FontWeight.bold,
                         fontSize: 18),

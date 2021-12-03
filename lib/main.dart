@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/Userschat.dart';
 import 'package:flutter_ui/tiktok/tiktokui.dart';
 
 void main() {
@@ -15,6 +14,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const UsersChat());
+        home: const TikTokUi());
   }
 }
