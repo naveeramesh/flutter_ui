@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'chat/UserChat.dart';
+import 'package:flutter_ui/bulb.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +15,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const UserChat());
+        home: const Bulb());
   }
 }
