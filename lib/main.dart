@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/tiktok/tiktokui.dart';
+import 'chat/UserChat.dart';
 
 void main() {
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key key}) : super(key: key);
   @override
@@ -14,6 +15,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const TikTokUi());
+        home: const UserChat());
   }
 }
