@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_ui/Theme/custombottombar.dart';
 
-import 'customimage.dart';
 
 class Home extends StatefulWidget {
   const Home({Key key}) : super(key: key);
@@ -48,8 +47,9 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          CustomImage(dark: dark),
+          
           CustomBottomBar(
             dark: dark,
           )
