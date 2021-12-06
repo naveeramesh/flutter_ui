@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/bulb.dart';
+import 'package:flutter_ui/Theme/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +10,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        themeMode: ThemeMode.light,
+        darkTheme: ThemeData(
+            brightness: Brightness.dark, colorScheme: ColorScheme.dark()),
         debugShowCheckedModeBanner: false,
         title: 'Flutter UI',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const Bulb());
+        home: const Home());
   }
 }
