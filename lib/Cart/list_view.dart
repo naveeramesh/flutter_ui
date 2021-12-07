@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/Animations/item_values.dart';
-import 'package:flutter_ui/Animations/list_tile.dart';
+
+import 'package:flutter_ui/Cart/item_values.dart';
+import 'package:flutter_ui/Cart/list_tile.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ListViews extends StatefulWidget {
