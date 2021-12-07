@@ -58,3 +58,9 @@ https://user-images.githubusercontent.com/54928117/144697916-db610225-78bd-4595-
   
 https://user-images.githubusercontent.com/54928117/144792375-e3363ae7-678c-4630-81be-d44bedfca6c1.mp4
 
+9. Cart
+
+https://user-images.githubusercontent.com/54928117/145004856-f5e101bc-5ac6-4ca0-aadb-14dbc60ddd16.mp4
+
+
+  
