@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/Animations/list_view.dart';
 import 'package:flutter_ui/Theme/home.dart';
 
 void main() {
@@ -10,14 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        themeMode: ThemeMode.light,
-        darkTheme: ThemeData(
-            brightness: Brightness.dark, colorScheme: ColorScheme.dark()),
+        // themeMode: ThemeMode.light,
+        // darkTheme: ThemeData(
+        //     brightness: Brightness.dark, colorScheme: ColorScheme.dark()),
         debugShowCheckedModeBanner: false,
         title: 'Flutter UI',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const Home());
+        home: const ListViews());
   }
 }
