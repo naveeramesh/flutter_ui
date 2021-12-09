@@ -27,6 +27,89 @@ class _Custom_LoaderState extends State<Custom_Loader>
             parent: controller,
             curve: Interval(0.0, 1.0, curve: Curves.linear)));
 
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+          height: 100.0,
+          width: 100.0,
+          child: RotationTransition(
+            turns: animation_rotation,
+            child: Stack(
+              children: [
+                Circle(radius: 30, color: Colors.grey[300]),
+                Transform.translate(
+                  offset: Offset(radius * cos(pi / 4), radius * sin(pi / 4)),
+                  child: Circle(radius: 7, color: Colors.red),
+                ),
+                Transform.translate(
+                  offset: Offset(
+                      radius * cos(2 * pi / 4), radius * sin(2 * pi / 4)),
+                  child: Circle(radius: 7, color: Colors.pink),
+                ),
+                Transform.translate(
+                  offset: Offset(
+                      radius * cos(3 * pi / 4), radius * sin(3 * pi / 4)),
+                  child: Circle(radius: 7, color: Colors.yellow),
+                ),
+                Transform.translate(
+                  offset: Offset(
+                      radius * cos(4 * pi / 4), radius * sin(4 * pi / 4)),
+                  child: Circle(radius: 7, color: Colors.orange),
+                ),
+                Transform.translate(
+                  offset: Offset(
+                      radius * cos(5 * pi / 4), radius * sin(5 * pi / 4)),
+                  child: Circle(radius: 7, color: Colors.green),
+                ),
+                Transform.translate(
+                  offset: Offset(
+                      radius * cos(6 * pi / 4), radius * sin(6 * pi / 4)),
+                  child: Circle(radius: 7, color: Colors.amber),
+                ),
+                Transform.translate(
+                  offset: Offset(
+                      radius * cos(7 * pi / 4), radius * sin(7 * pi / 4)),
+                  child: Circle(radius: 7, color: Colors.black),
+                ),
+                Transform.translate(
+                  offset: Offset(
+                      radius * cos(8 * pi / 4), radius * sin(8 * pi / 4)),
+                  child: Circle(radius: 7, color: Colors.blue),
+                ),
+              ],
+            ),
+          ),
+        ),
+        ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                primary: Colors.black,
+                textStyle:
+                    TextStyle(fontSize: 10, fontWeight: FontWeight.bold)),
+            onPressed: () {
+              _buttonclick();
+            },
+            child: Text("Click to blink"))
+      ],
+    );
+  }
+
+  void _buttonclick() {
+    print(radius);
+    controller =
+        AnimationController(vsync: this, duration: Duration(seconds: 5));
+
+    animation_rotation = Tween<double>(begin: 0.0, end: 1.0).animate(
+        CurvedAnimation(
+            parent: controller,
+            curve: Interval(0.0, 1.0, curve: Curves.linear)));
+
     animation_radius_in = Tween<double>(begin: 1.0, end: 0.0).animate(
         CurvedAnimation(
             parent: controller,
@@ -53,70 +136,6 @@ class _Custom_LoaderState extends State<Custom_Loader>
     });
 
     controller.repeat();
-
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          height: 100.0,
-          width: 100.0,
-          child: Center(
-            child: RotationTransition(
-              turns: animation_rotation,
-              child: Stack(
-                children: [
-                  Circle(radius: 30, color: Colors.grey[300]),
-                  Transform.translate(
-                    offset: Offset(radius * cos(pi / 4), radius * sin(pi / 4)),
-                    child: Circle(radius: 7, color: Colors.red),
-                  ),
-                  Transform.translate(
-                    offset: Offset(
-                        radius * cos(2 * pi / 4), radius * sin(2 * pi / 4)),
-                    child: Circle(radius: 7, color: Colors.pink),
-                  ),
-                  Transform.translate(
-                    offset: Offset(
-                        radius * cos(3 * pi / 4), radius * sin(3 * pi / 4)),
-                    child: Circle(radius: 7, color: Colors.yellow),
-                  ),
-                  Transform.translate(
-                    offset: Offset(
-                        radius * cos(4 * pi / 4), radius * sin(4 * pi / 4)),
-                    child: Circle(radius: 7, color: Colors.orange),
-                  ),
-                  Transform.translate(
-                    offset: Offset(
-                        radius * cos(5 * pi / 4), radius * sin(5 * pi / 4)),
-                    child: Circle(radius: 7, color: Colors.green),
-                  ),
-                  Transform.translate(
-                    offset: Offset(
-                        radius * cos(6 * pi / 4), radius * sin(6 * pi / 4)),
-                    child: Circle(radius: 7, color: Colors.amber),
-                  ),
-                  Transform.translate(
-                    offset: Offset(
-                        radius * cos(7 * pi / 4), radius * sin(7 * pi / 4)),
-                    child: Circle(radius: 7, color: Colors.black),
-                  ),
-                  Transform.translate(
-                    offset: Offset(
-                        radius * cos(8 * pi / 4), radius * sin(8 * pi / 4)),
-                    child: Circle(radius: 7, color: Colors.blue),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-        ElevatedButton(onPressed: () {}, child: Text("Click to rotate"))
-      ],
-    );
   }
 }
 

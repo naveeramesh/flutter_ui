@@ -14,6 +14,7 @@ class _CustomCircluarProgressState extends State<CustomCircluarProgress> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black,
         elevation: 0,
         centerTitle: true,
         title: Text("Custom Circular Progress indicator",
