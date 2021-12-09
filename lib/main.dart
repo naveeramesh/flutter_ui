@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui/Cart/list_view.dart';
 
 import 'package:flutter_ui/Theme/home.dart';
-import 'package:flutter_ui/circularprogress_custom.dart';
+import 'package:flutter_ui/loader/circularprogress_custom.dart';
 
 void main() {
   runApp(const MyApp());
