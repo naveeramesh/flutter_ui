@@ -63,4 +63,12 @@ https://user-images.githubusercontent.com/54928117/144792375-e3363ae7-678c-4630-
 https://user-images.githubusercontent.com/54928117/145004856-f5e101bc-5ac6-4ca0-aadb-14dbc60ddd16.mp4
 
 
+10. Custom progress indicator
   
+
+https://user-images.githubusercontent.com/54928117/145357253-bdc0b803-5bbc-43ac-96e8-23838ab99b76.mp4
+
+
+
+
+
