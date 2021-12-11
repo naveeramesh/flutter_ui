@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui/chat/deatils.dart';
+import 'package:flutter_ui/chat/details.dart';
 import 'package:flutter_ui/chat/userdata_chat.dart';
 import 'package:google_fonts/google_fonts.dart';
 
