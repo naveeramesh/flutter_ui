@@ -95,7 +95,7 @@ class _Custom_LoaderState extends State<Custom_Loader>
             onPressed: () {
               _buttonclick();
             },
-            child: Text("Click to blink"))
+            child: Text("Click to blink and rotate"))
       ],
     );
   }
