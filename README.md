@@ -68,6 +68,9 @@ https://user-images.githubusercontent.com/54928117/145004856-f5e101bc-5ac6-4ca0-
 
 https://user-images.githubusercontent.com/54928117/145357253-bdc0b803-5bbc-43ac-96e8-23838ab99b76.mp4
 
+11. Details Chat
+  
+<img width="958" alt="image" src="https://user-images.githubusercontent.com/54928117/145668236-e616a0c5-e5da-4aa5-86ee-2d1c6504e594.png">
 
 
 
