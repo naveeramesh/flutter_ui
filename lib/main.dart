@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui/Cart/list_view.dart';
+import 'package:flutter_ui/Onboarding/on_boardong.dart';
 import 'package:flutter_ui/chat/detail_chat.dart';
 void main() {
   runApp(const MyApp());
@@ -18,6 +19,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home:  DetailChat());
+        home:  Onboarding());
   }
 }
