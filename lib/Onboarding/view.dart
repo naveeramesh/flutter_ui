@@ -32,6 +32,9 @@ class _Page_ViewState extends State<Page_View> {
           child: Container(
               child: Text(
             "${widget.items.title}",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
           ))),
       Padding(
           padding: EdgeInsets.only(top: 10),
@@ -41,6 +44,11 @@ class _Page_ViewState extends State<Page_View> {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 "${widget.items.description}",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.normal),
               ),
             )),
           )),

@@ -19,7 +19,7 @@ class _OnboardingState extends State<Onboarding> {
         borderRadius: BorderRadius.all(
           Radius.circular(50),
         ),
-        color: _currentpg == index ? Colors.orange[800] : Colors.grey,
+        color: _currentpg == index ? Colors.blue[800] : Colors.grey,
       ),
       margin: const EdgeInsets.only(right: 5),
       height: 10,
@@ -74,26 +74,23 @@ class _OnboardingState extends State<Onboarding> {
                               (int index) => _buildDots(index: index)),
                         )),
                   )
-                : Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(right: 20.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                              color: Colors.orange[800],
-                              shape: BoxShape.circle),
-                          child: Center(
-                              child: IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.arrow_forward_ios_outlined,
-                              color: Colors.white,
-                            ),
-                          )),
-                        ),
+                : Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                      height: 60,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.blue[800],
                       ),
-                    ],
+                      child: Center(
+                          child: Text(
+                        "Get Started",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
+                      )),
+                    ),
                   ),
             SizedBox(
               height: 20,
