@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/Auth/Signup.dart';
 import 'package:flutter_ui/Cart/list_view.dart';
 import 'package:flutter_ui/Onboarding/on_boardong.dart';
 import 'package:flutter_ui/chat/detail_chat.dart';
@@ -19,6 +20,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home:  Onboarding());
+        home:  Signup());
   }
 }

@@ -22,7 +22,7 @@ class _Page_ViewState extends State<Page_View> {
         height: MediaQuery.of(context).size.height / 10,
       ),
       Container(
-          height: MediaQuery.of(context).size.height / 2.5,
+          height: MediaQuery.of(context).size.height / 2,
           child: Image.network(widget.items.imageurl)),
       SizedBox(
         height: 30,

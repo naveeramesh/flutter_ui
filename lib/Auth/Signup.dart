@@ -20,21 +20,18 @@ class _SignupState extends State<Signup> {
         body: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 40.0, right: 20),
+              padding: const EdgeInsets.only(top: 50.0, right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   GestureDetector(
-                      onTap: () {
-                        Navigator.pushReplacement(context,
-                            MaterialPageRoute(builder: (b) => Signup()));
-                      },
+                      onTap: () {},
                       child: Text(
                         "Skip",
                         style: GoogleFonts.josefinSans(
                             fontSize: 15,
                             color: Colors.black,
-                            fontWeight: FontWeight.normal),
+                            fontWeight: FontWeight.bold),
                       ))
                 ],
               ),
@@ -59,35 +56,40 @@ class _SignupState extends State<Signup> {
               child: Row(
                 children: [
                   Container(
-                    constraints: BoxConstraints(maxWidth: 200, maxHeight: 100),
                     child: Text(
                       "Smart Management",
                       textAlign: TextAlign.start,
                       style: GoogleFonts.josefinSans(
-                          fontSize: 15,
+                          fontSize: 25,
                           color: Colors.black,
-                          fontWeight: FontWeight.normal),
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 20.0, bottom: 20, top: 20),
+              padding: const EdgeInsets.only(
+                left: 20.0,
+                top: 10,
+              ),
               child: Row(
                 children: [
-                  Text(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    style: GoogleFonts.josefinSans(
-                        fontSize: 15,
-                        color: Colors.black,
-                        fontWeight: FontWeight.normal),
+                  Container(
+                    constraints: BoxConstraints(maxWidth: 350),
+                    child: Text(
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                      style: GoogleFonts.josefinSans(
+                          fontSize: 15,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
                   )
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(30.0),
               child: GestureDetector(
                 onTap: () {},
                 child: Container(
@@ -102,7 +104,7 @@ class _SignupState extends State<Signup> {
                     style: GoogleFonts.josefinSans(
                         fontSize: 20,
                         color: Colors.white,
-                        fontWeight: FontWeight.normal),
+                        fontWeight: FontWeight.bold),
                   )),
                 ),
               ),
