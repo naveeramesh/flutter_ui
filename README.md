@@ -75,3 +75,8 @@ https://user-images.githubusercontent.com/54928117/145357253-bdc0b803-5bbc-43ac-
 
 
 
+
+12. Onboarding
+  
+https://user-images.githubusercontent.com/54928117/146131198-6647cd55-a48f-4a7e-8015-d6d9f05e356d.mp4
+
