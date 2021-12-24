@@ -3,6 +3,7 @@ import 'package:flutter_ui/Auth/Signup.dart';
 import 'package:flutter_ui/Cart/list_view.dart';
 import 'package:flutter_ui/Onboarding/on_boardong.dart';
 import 'package:flutter_ui/chat/detail_chat.dart';
+import 'package:flutter_ui/weatherapp_ui.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -20,6 +21,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home:  Signup());
+        home:  Weather());
   }
 }
